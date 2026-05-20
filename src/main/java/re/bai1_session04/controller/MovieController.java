@@ -56,6 +56,7 @@ public class MovieController {
         movies.add(new Movie("M002", "Parasite", "Drama", 8.6));
 
         // đổi thành return về List ob để cho Spring boot tự covert về dạng JSON
+        // nếu trả về chuỗi thì không thể convert về dạng JSON được
         return movies;
     }
 }
